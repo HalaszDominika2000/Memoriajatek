@@ -1,5 +1,10 @@
+import { inditIdozito, inditJatekot, torolIdozito } from './feladatok.js';
 
-import { inditJatekot } from "./feladatok.js";
+function inditas() {
+  torolIdozito();
+  inditIdozito();
+  inditJatekot();
+}
 
-inditJatekot();
-
+window.addEventListener("load", inditas);
+document.getElementById("ujra").addEventListener("click", inditas);
